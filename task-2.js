@@ -6,7 +6,7 @@ const ingredients = [
   'Зелень',
   'Приправы',
 ];
-let ulingredients = document.getElementById('ingredients');
+const ulingredients = document.getElementById('ingredients');
 const foodIngredients = ingredients.forEach(ingredient => {
   let items = document.createElement('li');
   items.innerHTML = ingredient;

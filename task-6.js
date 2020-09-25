@@ -1,7 +1,7 @@
-let inputVal = document.getElementById('validation-input');
+const inputVal = document.getElementById('validation-input');
 
-let totalLenght = inputVal.getAttribute('data-length');
-let intTotallenght = parseInt(totalLenght, 10);
+const totalLenght = inputVal.getAttribute('data-length');
+const intTotallenght = parseInt(totalLenght, 10);
 
 inputVal.oninput = function () {
   if (inputVal.value.length === intTotallenght) {
