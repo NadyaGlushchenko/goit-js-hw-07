@@ -1,6 +1,6 @@
-let render = document.querySelector('[data-action="render"]');
-let destroy = document.querySelector('[data-action="destroy"]');
-let boxes = document.getElementById('boxes');
+const render = document.querySelector('[data-action="render"]');
+const destroy = document.querySelector('[data-action="destroy"]');
+const boxes = document.getElementById('boxes');
 render.addEventListener('click', getAmount);
 destroy.addEventListener('click', destroyBoxes);
 
@@ -10,11 +10,11 @@ function getAmount() {
 }
 
 function createBoxes(amount) {
-  let basicSize = 30;
-  let fragment = document.createDocumentFragment();
+  const basicSize = 30;
+  const fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++) {
-    let size = basicSize + i * 10;
-    let div = document.createElement('div');
+    const size = basicSize + i * 10;
+    const div = document.createElement('div');
     div.style.cssText = `width: ${size}px; height: ${size}px; background-color: rgba( ${random()} , ${random()} , ${random()} )`;
     fragment.appendChild(div);
   }
